@@ -1,0 +1,98 @@
+.footer {
+  &__top {
+    margin: 30px 3.5px 34px 3.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .line {
+      max-width: 458px;
+      height: 1px;
+      background: red;
+      width: 100%;
+    }
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    gap: 121px;
+    .footer__main-left {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+    }
+    .list.first {
+      gap: 27px;
+    }
+    .list-link {
+      display: flex;
+      align-items: center;
+    }
+    .list-link.start {
+      align-items: start;
+      gap: 4px;
+    }
+    .list-link.vkontakte,
+    .list-link.mail {
+      align-items: center;
+      gap: 6px;
+    }
+    .list-link.contacts {
+      gap: 9px;
+    }
+    .text {
+      font-size: 12px;
+      line-height: 174%;
+      letter-spacing: 2.5%;
+    }
+    .text.location {
+        max-width: 166px;
+    }
+    .text.vk {
+      line-height: 114%;
+    }
+    .footer__main-right {
+      display: flex;
+      justify-content: space-between;
+      gap: 57px;
+      .title {
+        color: #d60000;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 81%;
+        letter-spacing: 2.5%;
+        text-transform: uppercase;
+        margin-bottom: 9px;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .text {
+        font-size: 12px;
+        line-height: 81%;
+        letter-spacing: 2.5%;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+.footer-bottom {
+  background-color: #D60000;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.footer-bottom .bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom .footer-bottom-right {
+  display: flex;
+  gap: 190px;
+}

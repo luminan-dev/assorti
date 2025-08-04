@@ -1,3 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Plumb", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+footer {
+  background: #000;
+}
+
+.footer__top {
+  margin: 30px 3.5px 34px 3.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__top .line {
+  max-width: 458px;
+  height: 1px;
+  background: red;
+  width: 100%;
+}
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  gap: 121px;
+}
+.footer__main .footer__main-left {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer__main .list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__main .list.first {
+  gap: 27px;
+}
+.footer__main .list-link {
+  display: flex;
+  align-items: center;
+}
+.footer__main .list-link.start {
+  align-items: start;
+  gap: 4px;
+}
+.footer__main .list-link.vkontakte,
+.footer__main .list-link.mail {
+  align-items: center;
+  gap: 6px;
+}
+.footer__main .list-link.contacts {
+  gap: 9px;
+}
+.footer__main .text {
+  font-size: 12px;
+  line-height: 174%;
+  letter-spacing: 2.5%;
+}
+.footer__main .text.location {
+  max-width: 166px;
+}
+.footer__main .text.vk {
+  line-height: 114%;
+}
+.footer__main .footer__main-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 57px;
+}
+.footer__main .footer__main-right .title {
+  color: #d60000;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 81%;
+  letter-spacing: 2.5%;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+.footer__main .footer__main-right .list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__main .footer__main-right .text {
+  font-size: 12px;
+  line-height: 81%;
+  letter-spacing: 2.5%;
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  background-color: #D60000;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.footer-bottom .bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom .footer-bottom-right {
+  display: flex;
+  gap: 190px;
+}
 
 /*# sourceMappingURL=style.css.map */
