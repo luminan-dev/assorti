@@ -64,6 +64,113 @@ footer {
   background: #000;
 }
 
+.info-section {
+  background-image: url(/images/circle-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 90px 153px;
+  padding-inline: 20px 45px;
+}
+.info-section .title {
+  color: #d60000;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 71%;
+  line-height: 71%;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+.info-section .sub-title {
+  font-weight: 900;
+  color: #000000;
+  font-size: 14px;
+  line-height: 180%;
+  letter-spacing: 8.4px;
+  margin-top: 11px;
+  text-transform: uppercase;
+}
+.info-section .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+.info-section .content-box .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  margin-block: 20.4px 16px;
+}
+.info-section .content-box .paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.35px;
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+.info-section .read-more-box a {
+  display: flex;
+  gap: 13px;
+  width: fit-content;
+  align-items: center;
+  height: fit-content;
+}
+.info-section .read-more-box span {
+  color: #d60000;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+.info-section .card {
+  padding: 30px 22px;
+  position: relative;
+  z-index: 2;
+}
+.info-section .card .sub-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 109%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.info-section .card .card-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.info-section .card .card-box span {
+  color: white;
+}
+.info-section .card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #d60000;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.info-section .card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .footer__top {
   margin: 30px 3.5px 34px 3.5px;
   display: flex;
@@ -157,6 +264,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-inline: 23px;
 }
 
 .footer-bottom .footer-bottom-right {
