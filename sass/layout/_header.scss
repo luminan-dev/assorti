@@ -1,0 +1,19 @@
+.header{
+    .header-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-left{
+        img{
+            padding: 27px 32px;
+            background-color: #D60000;
+        }
+    }
+    .header-right{
+        img{
+            background-color: black;
+            padding: 32px 20px;
+        }
+    }
+}

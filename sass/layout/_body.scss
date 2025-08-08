@@ -1,3 +1,76 @@
+.read-more-box {
+  a {
+    display: flex;
+    gap: 13px;
+    width: fit-content;
+    align-items: center;
+    height: fit-content;
+  }
+  span {
+    color: #d60000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+  }
+}
+// advantages section
+
+.advantages {
+  background-image: url(/images/circle-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    .title {
+      color: #d60000;
+      font-weight: 900;
+      font-size: 90px;
+      line-height: 85%;
+      letter-spacing: -9px;
+      text-transform: uppercase;
+    }
+  }
+  .advantage-box {
+    .title {
+      width: fit-content;
+      font-weight: 900;
+      font-size: 100px;
+      line-height: 85%;
+      letter-spacing: -15px;
+      text-align: center;
+      color: #000000;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .right img {
+    width: 85.526611328125px;
+    height: 183.19400024414062px;
+  }
+  .sub-title {
+    display: flex;
+    gap: 25px;
+    .part {
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 180%;
+      letter-spacing: 10;
+      text-transform: uppercase;
+    }
+  }
+}
+
 .info-section {
   background-image: url(/images/circle-bg.png);
   background-position: center;
@@ -45,23 +118,6 @@
       letter-spacing: 0.35px;
       margin-bottom: 40px;
       opacity: 0.7;
-    }
-  }
-  .read-more-box {
-    a {
-      display: flex;
-      gap: 13px;
-      width: fit-content;
-      align-items: center;
-      height: fit-content;
-    }
-    span {
-      color: #d60000;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 150%;
-      text-decoration: underline;
-      text-decoration-style: solid;
     }
   }
   .card {
