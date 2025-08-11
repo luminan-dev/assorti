@@ -16,6 +16,11 @@
     <!-- fonts -->
     <link rel="stylesheet" href="./fonts/Inter/stylesheet.css" />
     <link rel="stylesheet" href="./fonts/Plumbs/stylesheet.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!--CSS links  -->
     <link rel="stylesheet" href="./sass/css/normalize.css" />
     <link rel="stylesheet" href="./sass/css/style.css" />
@@ -25,13 +30,18 @@
       <header class="header">
         <div class="header-box">
           <div class="header-left">
-            <img src="images/icons/header-left.svg" alt="header-icon" />
+            <img class="red-icon" src="images/icons/header-left.svg" alt="header-icon" />
           </div>
           <a href="#!" title="img">
-            <img src="images/icons/logo.svg" alt="" />
+            <img class="logo-main" src="images/icons/logo.svg" alt="" />
           </a>
           <div class="header-right">
-            <img src="images/icons/header-right.svg" alt="" />
+            <img class="order" src="images/icons/header-right.svg" alt="" />
+            <div class="header-media">
+              <img src="images/icons/skype-black.svg" alt="" />
+              <img src="images/icons/whatsapp-black.svg" alt="" />
+              <img class="car-white" src="images/icons/car-white.svg" alt="" />
+            </div>
           </div>
         </div>
       </header>
@@ -53,19 +63,139 @@
               </div>
             </div>
             <div class="advantage-box">
-              <h1 class="title">18</h1>
-              <h3 class="info">лет возим автомобили с Востока</h3>
-              <div class="read-more-box">
-                <a href="#!" class="read-more" title="read more">
-                  <span>История</span>
-                  <img src="images/icons/read-more-red.svg" alt="" />
-                </a>
+              <div class="advan-item">
+                <h1 class="title">18</h1>
+                <h3 class="info">лет возим автомобили с Востока</h3>
+                <div class="read-more-box">
+                  <a href="#!" class="read-more" title="read more">
+                    <span>История </span>
+                    <img src="images/icons/read-more-red.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="advan-item">
+                <h1 class="title">300+</h1>
+                <h3 class="info">постоянных клиентов</h3>
+                <div class="read-more-box">
+                  <a href="#!" class="read-more" title="read more">
+                    <span>Как мы работаем</span>
+                    <img src="images/icons/read-more-red.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="advan-item red">
+                <h1 class="title">2000+</h1>
+                <img class="red-map" src="images/red-map.png" alt="" />
+                <div class="order-box">
+                  <a class="order-auto">заказать авто</a>
+                </div>
+                <h3 class="info">машин уже привезли за годы работы</h3>
+                <div class="read-more-box">
+                  <a href="#!" class="read-more" title="read more">
+                    <span>Смотреть галерею</span>
+                    <img src="images/icons/read-more-red.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="advan-item">
+                <h1 class="title">0</h1>
+                <h3 class="info">негативных отзывов</h3>
+                <div class="read-more-box">
+                  <a href="#!" class="read-more" title="read more">
+                    <span>Читать отзывы</span>
+                    <img src="images/icons/read-more-red.svg" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
-
         <section class="info-section">
+          <div class="container">
+            <h1 class="title">Информационный раздел</h1>
+            <h3 class="sub-title">Новости статьи спецпредложения</h3>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="content-box">
+                    <div class="img-box">
+                      <img src="images/conent-bg.png" alt="Рынок или аукцион" />
+                    </div>
+                    <h2 class="title">
+                      Рынок или аукцион? Каковы плюсы и минусы покупки
+                      автомобиля на аукционах?
+                    </h2>
+                    <p class="paragraph">
+                      Главный плюс — гарантия покупки автомобиля именно в том
+                      состоянии, которое вам обещают. Аукционная оценка —
+                      аспект, выгодно отличающий аукцион от автомобильного
+                      рынка.
+                    </p>
+                    <div class="read-more-box">
+                      <a href="#!" class="read-more" title="read more">
+                        <span>Читать подробнее</span>
+                        <img
+                          src="images/icons/read-more-red.svg"
+                          alt="read more"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="content-box">
+                    <div class="img-box">
+                      <img
+                        src="images/conent-bg.png"
+                        alt="Как проходят торги на аукционах"
+                      />
+                    </div>
+                    <h2 class="title">Как проходят торги на аукционах?</h2>
+                    <p class="paragraph">
+                      Прежде всего, торги на аукционах имеют свои особенности.
+                      Участие в аукционах требует определенных знаний и навыков
+                      — от выбора лота до стратегии торгов.
+                    </p>
+                    <div class="read-more-box">
+                      <a href="#!" class="read-more" title="read more">
+                        <span>Читать подробнее</span>
+                        <img
+                          src="images/icons/read-more-red.svg"
+                          alt="read more"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      class="card-img"
+                      src="images/content-bg3.png"
+                      alt="Ввоз на физическое и юридическое лицо"
+                    />
+                    <div class="card-box">
+                      <h2 class="sub-title">
+                        Ввоз на физическое и юридическое лицо — в чем разница?
+                      </h2>
+                      <div class="read-more-box">
+                        <a href="#!" class="read-more" title="read more">
+                          <span>Читать подробнее</span>
+                          <img
+                            src="images/icons/read-more-white.svg"
+                            alt="read more"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="info-section">
           <div class="container">
             <h1 class="title">информационный раздел</h1>
             <h3 class="sub-title">новости статьи спецпредложения</h3>
@@ -126,7 +256,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
       </main>
       <footer class="footer">
         <div class="container">
