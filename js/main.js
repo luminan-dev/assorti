@@ -2,7 +2,7 @@ const swiper = new Swiper('.info-swiper', {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.info-pagination',
     clickable: true,
   },
   breakpoints: {
@@ -16,5 +16,18 @@ const swiper = new Swiper('.info-swiper', {
       spaceBetween: 30,
     }
   }
+});
+var swiper2 = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: '.custom-pagination',
+        type: 'custom',
+        renderCustom: function (swiper, current, total) {
+            let currentFormatted = current < 10 ? '0' + current : current;
+            let totalFormatted = total < 10 ? '0' + total : total;
+            return `${currentFormatted} / ${totalFormatted}`;
+        }
+    }
 });
 
