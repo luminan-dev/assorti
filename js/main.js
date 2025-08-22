@@ -24,6 +24,33 @@ const swiper1 = new Swiper(".swiper", {
   },
 });
 
+const razborSwiper = new Swiper(".cars-swiper", {
+  slidesPerView: 2.3, // nechta mashina yonma-yon chiqadi (desktop)
+  spaceBetween: 53, // orasidagi masofa
+  loop: true, // cheksiz aylanish
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      // mobil
+      slidesPerView: 1.1,
+      spaceBetween: 15,
+    },
+    768: {
+      // planshet
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      // desktop
+      slidesPerView: 2.3,
+      spaceBetween: 30,
+    },
+  },
+});
+
 const swiper2 = new Swiper(".info-swiper", {
   loop: true,
   slidesPerView: 3,

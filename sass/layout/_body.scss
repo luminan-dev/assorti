@@ -110,6 +110,7 @@
 .intro-section {
   .container {
     position: relative;
+    display: flex;
   }
   .castle {
     position: absolute;
@@ -200,6 +201,9 @@
     font-weight: 400;
     font-size: 14px;
     text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .btn {
@@ -330,14 +334,14 @@
       }
     }
   }
-  .intro-section .red-btn-box{
+  .intro-section .red-btn-box {
     bottom: -220px !important;
     left: 30px;
   }
 }
 @media (max-width: 450px) {
   .cars .media-cars {
-    width: 265.3818359375  !important;
+    width: 265.3818359375 !important;
     height: 218.1422576904297px !important;
   }
 }
@@ -437,6 +441,161 @@
       line-height: 180%;
       letter-spacing: 10;
       text-transform: uppercase;
+    }
+  }
+}
+
+// razbor-section
+.razbor-section {
+  padding-block: 91px;
+  .title-box {
+    .title {
+      color: #d60000;
+      font-size: 70px;
+      line-height: 71%;
+      letter-spacing: -6.7px;
+      text-transform: uppercase;
+    }
+    .sub-title {
+      display: flex;
+      gap: 35px;
+      margin-block: 10px;
+    }
+    .part {
+      line-height: 180%;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+    }
+  }
+  .swiper-button-prev:after, .swiper-button-next:after{
+    display: none;
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px; // chap va o‘ng orasidagi masofa
+    overflow: hidden;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    .text-left {
+      max-width: 236px;
+      flex: 0 0 30%; // chap blok eni
+      margin-top: 76px;
+    }
+    a {
+      color: #d60000;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 28px;
+      font-size: 14px;
+      line-height: 150%;
+      text-decoration: underline;
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #000000;
+    }
+    .buy-btn {
+      padding: 22px 35px;
+      color: black;
+      border: 1px solid #d60000;
+      margin-top: 33.5px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 79%;
+      letter-spacing: 2.8px;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+  }
+  .car-info {
+    display: flex;
+    margin-top: 27px;
+    .car-name {
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 87%;
+      letter-spacing: -0.48px;
+      text-transform: uppercase;
+    }
+    .black-line {
+      margin-inline: 20px 18px;
+    }
+    .car-code {
+      font-size: 15px;
+      margin-right: 77px;
+    }
+    .car-price {
+      font-weight: 400;
+      font-size: 7px;
+      line-height: 150%;
+      letter-spacing: 2.5px;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      span {
+        color: #d60000;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 87%;
+        letter-spacing: -0.72px;
+        text-align: right;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .car-image img {
+    height: 189.658447265625px;
+  }
+  .cars-wrapper {
+    width: 100%;
+    .swiper {
+      width: 100%;
+    }
+    .swiper-wrapper {
+      display: flex;
+    }
+    .swiper-slide {
+      flex-shrink: 0;
+      width: auto !important;
+      padding-bottom: 80px;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+      margin: 0 !important;
+      left: unset !important;
+      right: unset !important;
+      width: unset !important;
+      height: auto !important;
+      bottom: -194px;
+    }
+    .swiper-button-next{
+      left: unset !important;
+      right: unset !important;
+      width: unset !important;
+      height: auto !important;
+      margin: 0 !important;
+      bottom: -194px;
+      left: 99px !important;
+    }
+    .car-year {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 79%;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 27px 17px;
+      border: 3px solid #000;
+      border-radius: 50%;
     }
   }
 }
@@ -747,7 +906,7 @@
     .title-box {
       align-items: start;
     }
-    .red-btn-box.advan{
+    .red-btn-box.advan {
       display: none;
     }
   }
